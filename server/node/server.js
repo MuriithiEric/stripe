@@ -134,7 +134,7 @@ app.post(
   }
 );
 
-app.listen(4200, () => console.log(`Node server listening on port ${4200}!`));
+app.listen(4242, () => console.log(`Node server listening on port ${4242}!`));
 
 function checkEnv() {
   const price = process.env.PRICE;
