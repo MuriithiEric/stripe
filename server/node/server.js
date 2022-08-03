@@ -59,8 +59,6 @@ app.post("/create-checkout-session", async (req, res) => {
     success_url: `${domainURL}/success.html?session_id={CHECKOUT_SESSION_ID}`,
     cancel_url: `${domainURL}/canceled.html`,
 
-    
-
     // automatic_tax: { enabled: true }
   });
 
@@ -100,11 +98,11 @@ app.post(
         // Reusable transporter object using the default SMTP transport
         let transporter = nodemailer.createTransport({
           host: "smtp.gmail.com",
-          port: 587,
+          port: 465,
           secure: false, // true for 465, false for other ports
           auth: {
-            user: process.env.email,
-            pass: process.env.password,
+            user: "emuriithi42@gmail.com", // Your email which would be sending
+            pass: "npvbdfqqtplshkzm", //Your Email password
           },
         });
 
