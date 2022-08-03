@@ -101,8 +101,8 @@ app.post(
           port: 465,
           secure: false, // true for 465, false for other ports
           auth: {
-            user: "emuriithi42@gmail.com", // Your email which would be sending
-            pass: "npvbdfqqtplshkzm", //Your Email password
+            user: process.env.email, // Your email which would be sending
+            pass: process.env.password, //Your Email password
           },
         });
 
